@@ -1,12 +1,13 @@
 # Linkerd Service Mesh POC
 
-Objective provide a dashboard that allow to monitor the service mesh. We want to see :
+Objective provide a dashboard that allow to monitor the service mesh. We want to implement :
 
-- [x] The services
-- [ ] The requests between services
-
+- [x] Mesh Visualization
+- [ ] Distributed Tracing
+- [ ] mTls (Zero Trust)
 
 This repository contains a Proof of Concept (POC) for setting up and testing Linkerd, a popular service mesh for Kubernetes. The POC demonstrates how to deploy Linkerd in a Kubernetes cluster, configure it for basic service-to-service communication, and explore its features such as observability, security, and reliability.
+
 
 ## Prerequisites
 
@@ -28,7 +29,7 @@ kind create cluster --name linkerd-poc
 Follow [those steps](https://linkerd.io/2.18/getting-started/) to install Linkerd in your Kubernetes cluster.
 With those steps you should be able to see the dashboard that contain the visualization of the service mesh.
 
-```bash
+![Service Mesh Visualization](mesh-visualization.png)
 
 ## Gateway Api
 
